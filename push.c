@@ -34,7 +34,7 @@ void push(stack_t **stack, unsigned int line_number)
 	int n;
 
 	arg = strtok(NULL, "\n\t\r ");
-	if (arg == NULL || check_for_digit(arg))
+	if (arg == NULL || check_digit(arg))
 	{
 		dprintf(STDOUT_FILENO,
 			"L%u: usage: push integer\n",
